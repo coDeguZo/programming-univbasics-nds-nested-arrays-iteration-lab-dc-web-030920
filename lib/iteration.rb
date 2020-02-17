@@ -13,17 +13,13 @@ end
 array_2 = [[-1, -900], [10, 30], [0, 0], [14, 16 * -2.5], [Math.sin(1), 19]]
 
 def find_greater_pair(src)
-  inner_array = []
-  row_index = 0
-  while row_index < src.count do
-    element_index = 1
-    while element_index < src[row_index].count do
-      inner_array << src[row_index].max
-      element_index += 1
+    new_array = []
+    row_index = 0
+    while row_index < src.count do
+        new_array << src[row_index].max
+        row_index += 1
     end
-    row_index += 1
-  end
-inner_array
+    new_array
 end
 
 array = [
